@@ -10,6 +10,7 @@
   font-family: "bebas-neue" !important;
   font-size: 70px !important;
   font-weight: 500 !important;
+  line-height: 56px !important;
   text-transform: uppercase !important;
   letter-spacing: 16px;
   padding: 17px 0 17px 16px;
@@ -39,11 +40,17 @@
     width: 98px;
     height: 98px;
     background-color: #f15e27;
+    margin-left: calc( ((100% - 780px)/2) - 50px );
   }
   .under_box {
-    margin-left: 98px;
+    margin-left: calc( ((100% - 780px)/2) + 48px );
   }
   .brown_box {
     background-color: #d4af63;
   }
+}
+
+@media (min-width: 1170px) {
+/*225px*/
+}
 }
