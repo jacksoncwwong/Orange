@@ -1,4 +1,8 @@
+.home_section_slider .section-fs-container .section-fs-content {
+  width: 100% !important;
+}
 .section_container_box {
+  width: 100% !important;
   height: 100vh;
   position: relative;
 }
@@ -13,14 +17,15 @@
   display: inline-block !important;
 }
 .boxes_section_bg_image {
-  position: aboslute;
+  position: absolute;
   top: 10vh;
   bottom: 10vh;
   left: 30px;
   right: 30px;
-  background-image: ;
+  z-index: -1;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_home_bg.jpg");
   background-repeat: no-repeat;
-
+  background-position: center;
 }
 
 @media (min-width: 980px) {
@@ -28,7 +33,7 @@
 
   }
   .has_orange_box {
-
+    padding-top: 40vh;
   }
   .orange_box {
     width: 98px;
@@ -39,6 +44,6 @@
     margin-left: 98px;
   }
   .brown_box {
-
+    background-color: #d4af63;
   }
 }
