@@ -1,0 +1,44 @@
+.section_container_box {
+  height: 100vh;
+  position: relative;
+}
+.boxed_title {
+  font-family: "bebas-neue" !important;
+  font-size: 70px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 16px;
+  padding: 17px 0 17px 16px;
+  border: 2px solid white;
+  display: inline-block !important;
+}
+.boxes_section_bg_image {
+  position: aboslute;
+  top: 10vh;
+  bottom: 10vh;
+  left: 30px;
+  right: 30px;
+  background-image: ;
+  background-repeat: no-repeat;
+
+}
+
+@media (min-width: 980px) {
+  .section_container_box {
+
+  }
+  .has_orange_box {
+
+  }
+  .orange_box {
+    width: 98px;
+    height: 98px;
+    background-color: #f15e27;
+  }
+  .under_box {
+    margin-left: 98px;
+  }
+  .brown_box {
+
+  }
+}
