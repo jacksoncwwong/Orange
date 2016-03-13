@@ -43,8 +43,6 @@
   .orange_box_container {
     width: 98px;
     height: 60vh;
-    display: inline-block;
-    float: left;
   }
   .orange_box {
     width: 98px;
@@ -53,12 +51,7 @@
   }
   .under_box {
     float: left;
-    margin-top: 98px !important;
-  }
-  .section_paragraph {
-    clear: left;
-    margin-left: 15px;
-    margin-top: 25px;
+    margin-top:;
   }
   .brown_box {
     background-color: #d4af63;
