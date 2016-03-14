@@ -1,3 +1,32 @@
+/*Useful Info
+Colors:
+button color - #f15e27
+
+Useful Info Ends*/
+
+/*general styling*/
+.orange_btn {
+  display: inline-block;
+  padding: 12px 53px 12px 19px;
+  background-color: #f15e27; /* button color */
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_btn_bg.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-family: "bebas-neue";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  color: white;
+  border-radius: 20px;
+  letter-spacing: 4px;
+}
+.orange_btn:hover {
+  background-color: white;
+  background-image: ;
+  color: #f15e27; /* button color */
+}
+/*general styling ends*/
+
 .home_section_slider .section-fs-container .section-fs-content {
   width: 100% !important;
 }
@@ -31,18 +60,16 @@ sidenote - at 991 the bg does something weird
   margin-bottom: 0 !important;
   border: 2px solid white;
 }
-.under_box {
-/*  margin-left: auto;
-  margin-right: auto;*/
+.has_orange_box .under_box {
   position: absolute;
   left: 50%;
-  bottom: 120px;
-  margin-left: -141.5px;
+  bottom: 134px;
+  margin-left: -101.25px;
 }
-.section_paragraph {
+.has_orange_box .section_paragraph {
   position: absolute;
   left: 45px;
-  bottom: 20px;
+  bottom: 10px;
   max-width: 70%;
 }
 .boxes_section_bg_image {
@@ -56,7 +83,7 @@ sidenote - at 991 the bg does something weird
   background-repeat: no-repeat;
   background-position: center;
 }
-.brown_box {
+.has_orange_box .brown_box {
   position: absolute;
   top: 30px;
   right: 0;
@@ -65,6 +92,12 @@ sidenote - at 991 the bg does something weird
   z-index: -2;
   background-color: rgba(212,175,99, 0.8);
 }
+
+/* who we are section */
+
+
+
+/* who we are section ends */
 
 @media (min-width: 980px) {
   .section_container_box {
@@ -78,22 +111,24 @@ sidenote - at 991 the bg does something weird
     background-color: #f15e27;
     margin-left: calc( ((100% - 780px)/2) - 50px );
   }
-  .boxed_title_container {
-    text-align: left;
+  .has_orange_box .boxed_title_container {
     display: inline-block;
     margin-left: calc( ((100% - 780px)/2) + 48px );
+  }
+  .boxed_title {
     font-size: 70px !important;
     padding: 17px 0 17px 16px;
-    letter-spacing: 13px;
+    letter-spacing: 16px;
   }
-  .under_box {
+  .has_orange_box .under_box {
     position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    margin-left: 0;
   }
-  .section_paragraph {
+  .has_orange_box .section_paragraph {
     margin-left: calc( ((100% - 780px)/2) + 63px );
     margin-top: 25px;
     position: relative;
