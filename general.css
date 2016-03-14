@@ -94,7 +94,18 @@ sidenote - at 991 the bg does something weird
 }
 
 /* who we are section */
-
+.who_we_are_bg {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/partners_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+}
 
 
 /* who we are section ends */
@@ -152,4 +163,13 @@ sidenote - at 991 the bg does something weird
     top: 45vh;
     bottom: 50px;
   }
+
+  /* who we are section */
+  .who_we_are_bg {
+    left: 20%;
+    right: 20%;
+  }
+
+
+  /* who we are section ends */
 }
