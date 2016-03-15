@@ -25,6 +25,9 @@ Useful Info Ends*/
   background-image: ;
   color: #f15e27; /* button color */
 }
+p {
+  margin-bottom: 0;
+}
 /*general styling ends*/
 
 .home_section_slider .section-fs-container .section-fs-content {
@@ -105,8 +108,11 @@ sidenote - at 991 the bg does something weird
   background-position: center;
   background-size: contain;
   z-index: -1;
+  opacity: 0.4;
 }
-
+.who_we_are_section .boxed_title_container {
+  margin-top: 25vh;
+}
 
 /* who we are section ends */
 
@@ -166,10 +172,20 @@ sidenote - at 991 the bg does something weird
 
   /* who we are section */
   .who_we_are_bg {
-    left: 20%;
-    right: 20%;
+    left: 15%;
+    right: 15%;
   }
-
-
+  .who_we_are_section .boxed_title_container {
+    display: inline-block;
+    margin-left: calc( ((100% - 780px)/2) + 48px );
+  }
+  .who_we_are_section .section_paragraph {
+    margin-top: 35px;
+    margin-left: calc( ((100% - 780px)/2) + 63px );
+  }
+  .who_we_are_section .orange_btn {
+    margin-top: 30px;
+    margin-left: calc( ((100% - 780px)/2) + 48px );
+  }
   /* who we are section ends */
 }
