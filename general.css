@@ -50,6 +50,9 @@ some ideas for mobile of the title:
 - only thing to be weary of may be landscape view
 
 sidenote - at 991 the bg does something weird
+
+also for buttons, it seems we're going to have a set width in mobile
+then we're gonna have it inline-block for desktop
 */
 
 .boxed_title_container {
@@ -137,7 +140,7 @@ sidenote - at 991 the bg does something weird
 
 /* out work section */
 .our_work_section {
-  padding-top: 25vh;
+  padding-top: 35vh;
 }
 .our_work_bg {
   position: absolute;
@@ -147,17 +150,17 @@ sidenote - at 991 the bg does something weird
   bottom: 0;
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/our_work_bg.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 20vh;
   background-size: contain;
   z-index: -1;
   opacity: 0.4;
 }
 .our_work_section .boxed_title_container {
-  margin-left: 12.5%;
+  margin-left: 16%;
 }
 .our_work_section .section_paragraph {
   margin-top: 30px;
-  margin-left: calc(12.5% + 35px);
+  margin-left: calc(16% + 10px);
   width: 70%;
   max-width: 450px;
 }
