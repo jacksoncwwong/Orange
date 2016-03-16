@@ -25,6 +25,9 @@ Useful Info Ends*/
   background-image: ;
   color: #f15e27; /* button color */
 }
+.section_container_box .orange_btn_container {
+  text-align: center;
+}
 p {
   margin-bottom: 0;
 }
@@ -55,13 +58,18 @@ sidenote - at 991 the bg does something weird
 .boxed_title {
   display: inline-block !important;
   font-family: "bebas-neue" !important;
-  font-size: 45px !important;
+  font-size: 30px !important;
   font-weight: 500 !important;
   text-transform: uppercase !important;
-  letter-spacing: 13px;
-  padding: 16px 0 16px 13px;
+  letter-spacing: 12px;
+  padding: 14px 0 14px 12px;
   margin-bottom: 0 !important;
   border: 2px solid white;
+}
+.big_title {
+  font-size: 45px !important;
+  padding: 16px 0 16px 13px;
+  letter-spacing: 13px;
 }
 .has_orange_box .under_box {
   position: absolute;
@@ -72,7 +80,7 @@ sidenote - at 991 the bg does something weird
 .has_orange_box .section_paragraph {
   position: absolute;
   left: 45px;
-  bottom: 10px;
+  bottom: 20px;
   max-width: 70%;
 }
 .boxes_section_bg_image {
@@ -88,15 +96,18 @@ sidenote - at 991 the bg does something weird
 }
 .has_orange_box .brown_box {
   position: absolute;
-  top: 30px;
+  top: 15vh;
   right: 0;
   width: 50%;
   height: 25vh;
   z-index: -2;
-  background-color: rgba(212,175,99, 0.8);
+  background-color: rgba(212,175,99, 0.6);
 }
 
 /* who we are section */
+.who_we_are_section {
+  padding-top: 25vh;
+}
 .who_we_are_bg {
   position: absolute;
   left: 30px;
@@ -111,10 +122,49 @@ sidenote - at 991 the bg does something weird
   opacity: 0.4;
 }
 .who_we_are_section .boxed_title_container {
-  margin-top: 25vh;
+  margin-left: 12.5%;
 }
-
+.who_we_are_section .section_paragraph {
+  margin-top: 30px;
+  margin-left: calc(12.5% + 35px);
+  width: 70%;
+  max-width: 450px;
+}
+.who_we_are_section .orange_btn_container {
+  margin-top: 40px;
+}
 /* who we are section ends */
+
+/* out work section */
+.our_work_section {
+  padding-top: 25vh;
+}
+.our_work_bg {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/our_work_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.4;
+}
+.our_work_section .boxed_title_container {
+  margin-left: 12.5%;
+}
+.our_work_section .section_paragraph {
+  margin-top: 30px;
+  margin-left: calc(12.5% + 35px);
+  width: 70%;
+  max-width: 450px;
+}
+.our_work_section .orange_btn_container {
+  margin-top: 40px;
+}
+/* our work section ends */
 
 @media (min-width: 980px) {
   .section_container_box {
@@ -161,7 +211,7 @@ sidenote - at 991 the bg does something weird
     left: 30px;
     right: 30px;
   }
-  .brown_box {
+  .has_orange_box .brown_box {
     width: auto;
     height: auto;
     right: calc( ((100% - 780px)/2) - 50px );
@@ -171,6 +221,9 @@ sidenote - at 991 the bg does something weird
   }
 
   /* who we are section */
+  .who_we_are_section {
+    /*padding-top: 25vh;*/
+  }
   .who_we_are_bg {
     left: 15%;
     right: 15%;
@@ -185,7 +238,17 @@ sidenote - at 991 the bg does something weird
   }
   .who_we_are_section .orange_btn {
     margin-top: 30px;
-    margin-left: calc( ((100% - 780px)/2) + 48px );
+    margin-left: calc( ((100% - 780px)/2) + 63px );
+  }
+  .who_we_are_section .orange_btn_container {
+    text-align: left;
   }
   /* who we are section ends */
+
+  .orange_image {
+    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_image.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    height: 104px;
+  }
 }
