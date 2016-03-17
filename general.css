@@ -63,6 +63,7 @@ then we're gonna have it inline-block for desktop
   font-family: "bebas-neue" !important;
   font-size: 30px !important;
   font-weight: 500 !important;
+  line-height: 24px;
   text-transform: uppercase !important;
   letter-spacing: 12px;
   padding: 14px 0 14px 12px;
@@ -167,7 +168,41 @@ then we're gonna have it inline-block for desktop
 .our_work_section .orange_btn_container {
   margin-top: 40px;
 }
+.orange_image {
+  display: none;
+}
 /* our work section ends */
+
+/* facilities and services section */
+.facilities_and_services_section {
+  padding-top: 25vh;
+}
+.facilities_and_services_bg {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/partners_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  opacity: 0.4;
+}
+.facilities_and_services_section .boxed_title_container {
+  margin-left: 12.5%;
+}
+.facilities_and_services_section .section_paragraph {
+  margin-top: 30px;
+  margin-left: calc(12.5% + 35px);
+  width: 70%;
+  max-width: 450px;
+}
+.facilities_and_services_section .orange_btn_container {
+  margin-top: 40px;
+}
+/* facilities and services section ends */
 
 @media (min-width: 980px) {
   .section_container_box {
@@ -189,6 +224,7 @@ then we're gonna have it inline-block for desktop
     font-size: 70px !important;
     padding: 17px 0 17px 16px;
     letter-spacing: 16px;
+    line-height: 54px;
   }
   .has_orange_box .under_box {
     position: relative;
@@ -227,7 +263,7 @@ then we're gonna have it inline-block for desktop
   .who_we_are_section {
     /*padding-top: 25vh;*/
   }
-  .who_we_are_bg {
+  .word_bg {
     left: 15%;
     right: 15%;
   }
@@ -248,10 +284,36 @@ then we're gonna have it inline-block for desktop
   }
   /* who we are section ends */
 
-  .orange_image {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_image.png");
-    background-repeat: no-repeat;
-    background-position: right center;
+  /* our work section */
+  .our_work_section .boxed_title_container {
+    position: relative;
+    height: 92px;
+  }
+  .our_work_section .boxed_title {
+    position: absolute;
+    right: calc( 15% + 100px );
+  }
+  .our_work_section .section_paragraph {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 15%;
+    width: 410px;
+  }
+  .our_work_section .orange_btn_container {
+    position: relative;
     height: 104px;
   }
+  .our_work_section .orange_btn {
+    background-position: right 25px center;
+    padding-right: 75px;
+    position: absolute;
+    right: 16.5%;
+    top: 50%;
+    margin-top: -19px;
+  }
+  .orange_image {
+    position: absolute;
+    right: 10%;
+  }
+  /* our work section ends */
 }
