@@ -56,7 +56,7 @@ then we're gonna have it inline-block for desktop
 */
 
 .boxed_title_container {
-  /*text-align: center !important;*/
+  position: relative;
 }
 .boxed_title {
   display: inline-block !important;
@@ -183,7 +183,7 @@ then we're gonna have it inline-block for desktop
   right: 30px;
   top: 0;
   bottom: 0;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/partners_bg.png");
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_mobile_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -192,6 +192,13 @@ then we're gonna have it inline-block for desktop
 }
 .facilities_and_services_section .boxed_title_container {
   margin-left: 12.5%;
+}
+.facilities_title {
+  
+}
+.services_title {
+  margin-left: 60px;
+  margin-top: -2px !important;
 }
 .facilities_and_services_section .section_paragraph {
   margin-top: 30px;
@@ -258,14 +265,14 @@ then we're gonna have it inline-block for desktop
     top: 45vh;
     bottom: 50px;
   }
+  .word_bg {
+    left: 15%;
+    right: 15%;
+  }
 
   /* who we are section */
   .who_we_are_section {
     /*padding-top: 25vh;*/
-  }
-  .word_bg {
-    left: 15%;
-    right: 15%;
   }
   .who_we_are_section .boxed_title_container {
     display: inline-block;
@@ -316,4 +323,29 @@ then we're gonna have it inline-block for desktop
     right: 10%;
   }
   /* our work section ends */
+
+  /* who we are section */
+  .facilities_and_services_section {
+
+  }
+  .facilities_and_services_bg {
+    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_bg.png");
+    background-position: center;
+  }
+  .facilities_and_services_section .boxed_title_container {
+    display: inline-block;
+    margin-left: calc( ((100% - 780px)/2) + 48px );
+  }
+  .facilities_and_services_section .section_paragraph {
+    margin-top: 35px;
+    margin-left: calc( ((100% - 780px)/2) + 63px );
+  }
+  .facilities_and_services_section .orange_btn {
+    margin-top: 30px;
+    margin-left: calc( ((100% - 780px)/2) + 63px );
+  }
+  .facilities_and_services_section .orange_btn_container {
+    text-align: left;
+  }
+  /* who we are section ends */
 }
