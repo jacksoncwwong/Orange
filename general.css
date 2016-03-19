@@ -65,7 +65,7 @@ then we're gonna have it inline-block for desktop
   font-weight: 500 !important;
   line-height: 24px;
   text-transform: uppercase !important;
-  letter-spacing: 12px;
+  letter-spacing: 6px;
   padding: 14px 0 14px 12px;
   margin-bottom: 0 !important;
   border: 2px solid white;
@@ -73,14 +73,20 @@ then we're gonna have it inline-block for desktop
 .big_title {
   font-size: 45px !important;
   padding: 16px 0 16px 13px;
-  letter-spacing: 13px;
+  letter-spacing: 12px;
 }
-.has_orange_box .under_box {
+.has_orange_box .boxed_title_container {
   position: absolute;
   left: 50%;
   bottom: 134px;
   margin-left: -101.25px;
 }
+/*.has_orange_box .under_box {
+  position: absolute;
+  left: 50%;
+  bottom: 134px;
+  margin-left: -101.25px;
+}*/
 .has_orange_box .section_paragraph {
   position: absolute;
   left: 45px;
@@ -224,6 +230,11 @@ then we're gonna have it inline-block for desktop
     margin-left: calc( ((100% - 780px)/2) - 50px );
   }
   .has_orange_box .boxed_title_container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     display: inline-block;
     margin-left: calc( ((100% - 780px)/2) + 48px );
   }
@@ -233,14 +244,14 @@ then we're gonna have it inline-block for desktop
     letter-spacing: 16px;
     line-height: 54px;
   }
-  .has_orange_box .under_box {
+/*  .has_orange_box .under_box {
     position: relative;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin-left: 0;
-  }
+  }*/
   .has_orange_box .section_paragraph {
     margin-left: calc( ((100% - 780px)/2) + 63px );
     margin-top: 25px;
