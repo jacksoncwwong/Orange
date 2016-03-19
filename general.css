@@ -18,7 +18,7 @@ Useful Info Ends*/
   line-height: 14px;
   color: white;
   border-radius: 20px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 .orange_btn:hover {
   background-color: white;
@@ -35,6 +35,11 @@ p {
 
 .home_section_slider .section-fs-container .section-fs-content {
   width: 100% !important;
+}
+.home_section_slider .section-fs-container .section-fs-image {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: initial;
 }
 .section_container_box {
   width: 100% !important;
@@ -129,7 +134,7 @@ then we're gonna have it inline-block for desktop
   background-position: center;
   background-size: contain;
   z-index: -1;
-  opacity: 0.4;
+/*  opacity: 0.8;*/
 }
 .who_we_are_section .boxed_title_container {
   margin-left: 12.5%;
@@ -160,7 +165,7 @@ then we're gonna have it inline-block for desktop
   background-position: center 20vh;
   background-size: contain;
   z-index: -1;
-  opacity: 0.4;
+  /*opacity: 0.8;*/
 }
 .our_work_section .boxed_title_container {
   margin-left: 16%;
@@ -194,7 +199,7 @@ then we're gonna have it inline-block for desktop
   background-position: center;
   background-size: contain;
   z-index: -1;
-  opacity: 0.4;
+  /*opacity: 0.8;*/
 }
 .facilities_and_services_section .boxed_title_container {
   margin-left: 12.5%;
@@ -217,7 +222,18 @@ then we're gonna have it inline-block for desktop
 }
 /* facilities and services section ends */
 
+/* footer styling */
+.footer-content h5 {
+  color: white;
+}
+
+
+/* footer styling ends */
+
 @media (min-width: 980px) {
+  .orange_btn {
+    letter-spacing: 4px;
+  }
   .section_container_box {
   }
   .has_orange_box {
