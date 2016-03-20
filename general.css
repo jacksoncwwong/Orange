@@ -231,7 +231,7 @@ then we're gonna have it inline-block for desktop
 }
 /* footer styling ends */
 
-/* who_we_are page - header section styling */
+/* who_we_are page */
 .page_header {
   height: 50vh;
   padding-top: 170px;
@@ -241,11 +241,11 @@ then we're gonna have it inline-block for desktop
 }
 .who_we_are_header_bg {
   position: absolute;
-  top: 20vh;
-  bottom: -40px;
-  left: 30px;
-  right: 30px;
-  z-index: 0;
+  top: 35px;
+  bottom: -100px;
+  left: 20px;
+  right: 20px;
+  z-index: 10;
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/who_we_are_header_img1.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
@@ -256,7 +256,7 @@ then we're gonna have it inline-block for desktop
   font-weight: 500;
   color: white;
   letter-spacing: 10px;
-  z-index: 1;
+  z-index: 11;
   position: relative;
 }
 .internal_page_title .internal_page_sub_title {
@@ -264,11 +264,33 @@ then we're gonna have it inline-block for desktop
   font-size: 30px;
   font-weight: 300;
   letter-spacing: 5px;
-  opacity: 0.2;
+  opacity: 0.25;
   display: block;
   margin-bottom: -28px;
 }
-/* who_we_are page - header section styling ends */
+.internal_under_header_section {
+  padding-top: 160px;
+  padding-bottom: 90px;
+}
+.internal_section_container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.internal_under_header_section h3,
+.internal_under_header_section p {
+  color: #212020;
+  padding: 0;
+}
+.mobile_linebreaks {
+  display: none;
+}
+.clear_bg_color.statement:before {
+  background-color: transparent;
+}
+.orange_segments .internal_section_container {
+
+}
+/* who_we_are page */
 
 @media (min-width: 980px) {
   .orange_btn {
@@ -416,7 +438,7 @@ then we're gonna have it inline-block for desktop
   }
   /* who we are section ends */
 
-  /* who_we_are page - header section styling */
+  /* who_we_are page */
   .page_header {
     height: 440px;
   }
@@ -434,5 +456,41 @@ then we're gonna have it inline-block for desktop
   .internal_page_title .internal_page_sub_title {
     letter-spacing: 8px;
   }
-  /* who_we_are page - header section styling ends */
+  .mobile_linebreaks {
+    display: block;
+  }
+  .internal_under_header_section {
+    padding-top: 135px;
+  }
+  .internal_under_header_section h3 {
+    text-align: center;
+  }
+  .internal_under_header_section p {
+    margin-left: 50%;
+  }
+  .internal_section_container {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .orange_segments .internal_section_container .so-widget-gfxbucket-visual-editor {
+    display: flex;
+    justify-content: center;
+  }
+  .orange_segments .orange_segment_container {
+    width: 20%;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .orange_segment_container .line_box {
+    position: absolute;
+    border-right: 1px solid rgba(173, 144, 83, 1);
+    width: 100%;
+  }
+  #orange_segment_1 .line_box {
+    top: 0;
+    bottom: 83px;
+  }
+  /* who_we_are page */
 }
