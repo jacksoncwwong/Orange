@@ -287,8 +287,34 @@ then we're gonna have it inline-block for desktop
 .clear_bg_color.statement:before {
   background-color: transparent;
 }
+.orange_segments {
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+.orange_segments .orange_segments_title {
+  font-family: "bebas-neue";
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-align: center;
+}
 .orange_segments .internal_section_container {
 
+}
+.orange_segment_container h4 {
+  font-size: 31px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.orange_segment_container h5 {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.orange_segment_container p {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 /* who_we_are page */
 
@@ -472,6 +498,12 @@ then we're gonna have it inline-block for desktop
     width: 960px;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .orange_segments {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   .orange_segments .internal_section_container .so-widget-gfxbucket-visual-editor {
     display: flex;
@@ -479,17 +511,59 @@ then we're gonna have it inline-block for desktop
   }
   .orange_segments .orange_segment_container {
     width: 20%;
-    padding: 10px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
     box-sizing: border-box;
     position: relative;
+  }
+/*  #orange_segment_1 {
+    padding-left: 0;
+    width: calc(20% - 30px);
+  }
+  #orange_segment_5 {
+    padding-right: 0;
+    width: calc(20% - 30px);
+  }*/
+  #orange_segment_1 {
+    padding-top: 10px;
+  }
+  #orange_segment_2 {
+    padding-top: 35px;
+  }
+  #orange_segment_3 {
+    padding-top: 0;
+  }
+  #orange_segment_4 {
+    padding-top: 30px;
+  }
+  #orange_segment_5 {
+    padding-top: 20px;
   }
   .orange_segment_container .line_box {
     position: absolute;
     border-right: 1px solid rgba(173, 144, 83, 1);
     width: 100%;
+    z-index: -1;
   }
   #orange_segment_1 .line_box {
     top: 0;
+    left: 0;
+    bottom: 83px;
+  }
+  #orange_segment_2 .line_box {
+    top: 0;
+    left: 0;
+    bottom: 83px;
+  }
+  #orange_segment_3 .line_box {
+    top: 0;
+    left: 0;
+    bottom: 83px;
+  }
+  #orange_segment_4 .line_box {
+    top: 0;
+    left: 0;
     bottom: 83px;
   }
   /* who_we_are page */
