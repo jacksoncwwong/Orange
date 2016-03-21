@@ -1,6 +1,6 @@
 /*Useful Info
 Colors:
-button color - #f15e27
+button-color - #f15e27
 
 Useful Info Ends*/
 
@@ -24,34 +24,39 @@ Useful Info Ends*/
 .orange_btn:hover {
   background-color: white;
   background-image: ;
-  color: #f15e27; /* button color */
+  color: #f15e27; /* button-color */
 }
 .no_bg_btn {
   font-family: "bebas-neue";
-  font-size: ;
-  font-weight: ;
-  color: ;
-  padding: ;
-  background-image: ;
-  background-repeat: no-repeat;
-  background-position: ;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f15e27; /* button-color */
+  padding: 10px;
 }
 .no_bg_btn:hover {
   color: white;
 }
+.left_btn_arrow,
+.right_btn_arrow {
+  background-repeat: no-repeat;
+}
 .left_btn_arrow {
-  background-image: ;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/left_orange_arrow_np.png");
+  background-position: left center;
+  padding-left: 27px;
 }
 .left_btn_arrow:hover {
-  background-image: ;
+  background-image: url("");
 }
 .right_btn_arrow {
-
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/right_orange_arrow_np.png");
+  background-position: right center;
+  padding-right: 27px;
 }
 .right_btn_arrow:hover {
-
+  background-image: url("");
 }
-.section_container_box .orange_btn_container {
+.section_container_box .orange_btn_container { /*used to center the buttons on mobile*/
   text-align: center;
 }
 /*btn styling ends*/
@@ -449,6 +454,9 @@ p {
 /* facilities_services page ends */
 
 /* screening_room page */
+.orange_vid_container {
+  padding-top: 60px;
+}
 .sizzle_me_bg {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/sizzle_me_mobile_bg.png");
   background-repeat: no-repeat;
@@ -459,7 +467,20 @@ p {
   right: 30px;
   top: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 0;
+}
+#sizzle_section .internal_section_container {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 60px;
+}
+#sizzle_section .btn_container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+#sizzle_section .btn_container .divider {
+  height: 40px;
 }
 /* screening_room page ends */
 
@@ -748,6 +769,22 @@ p {
   .sizzle_me_bg {
     background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/sizzle_me_bg.png");
     left: 0;
+    right: 0;
+  }
+  #sizzle_section .internal_section_container {
+    padding-bottom: 200px;
+  }
+  #sizzle_section .btn_container .divider {
+    display: none;
+  }
+  #sizzle_section .btn_container .no_bg_btn {
+    position: absolute;
+    top: 0;
+  }
+  #sizzle_section .btn_container .left_btn_arrow {
+    left: 0;
+  }
+  #sizzle_section .btn_container .right_btn_arrow {
     right: 0;
   }
   /* screening_room page ends */
