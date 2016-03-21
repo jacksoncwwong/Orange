@@ -4,8 +4,8 @@ button color - #f15e27
 
 Useful Info Ends*/
 
-/*general styling*/
-.orange_btn {
+/****** shared styling ******/
+.orange_btn { 
   display: inline-block;
   padding: 12px 53px 12px 19px;
   background-color: #f15e27; /* button color */
@@ -30,39 +30,16 @@ Useful Info Ends*/
 }
 p {
   margin-bottom: 0;
+  font-size: 14px;
 }
 .page-template-page-full .nav-row {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/Light.png");
-}
-/*general styling ends*/
-
-.home_section_slider .section-fs-container .section-fs-content {
-  width: 100% !important;
-}
-.home_section_slider .section-fs-container .section-fs-image {
-  background-repeat: repeat;
-  background-position: center;
-  background-size: initial;
 }
 .section_container_box {
   width: 100% !important;
   position: relative;
   height: 100vh;
 }
-
-/*
-some ideas for mobile of the title:
-- we probably need fixed height of image place title properly
-- we can absolute position everything given we know how much height the paragraph and the title needs
-- if it's absolutely positioned we should have no issues with different mobile devices
-- only thing to be weary of may be landscape view
-
-sidenote - at 991 the bg does something weird
-
-also for buttons, it seems we're going to have a set width in mobile
-then we're gonna have it inline-block for desktop
-*/
-
 .boxed_title_container {
   position: relative;
 }
@@ -83,18 +60,23 @@ then we're gonna have it inline-block for desktop
   padding: 16px 0 16px 13px;
   letter-spacing: 12px;
 }
+/****** shared styling ends ******/
+
+/****** home page styling ******/
+.home_section_slider .section-fs-container .section-fs-content {
+  width: 100% !important;
+}
+.home_section_slider .section-fs-container .section-fs-image {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: initial;
+}
 .has_orange_box .boxed_title_container {
   position: absolute;
   left: 50%;
   bottom: 134px;
   margin-left: -101.25px;
 }
-/*.has_orange_box .under_box {
-  position: absolute;
-  left: 50%;
-  bottom: 134px;
-  margin-left: -101.25px;
-}*/
 .has_orange_box .section_paragraph {
   position: absolute;
   left: 45px;
@@ -269,7 +251,7 @@ then we're gonna have it inline-block for desktop
   margin-bottom: -28px;
 }
 .internal_under_header_section {
-  padding-top: 160px;
+  padding-top: 180px;
   padding-bottom: 90px;
 }
 .internal_section_container {
@@ -281,6 +263,9 @@ then we're gonna have it inline-block for desktop
   color: #212020;
   padding: 0;
 }
+.internal_under_header_section h3 {
+  font-size: 24px;
+}
 .mobile_linebreaks {
   display: none;
 }
@@ -291,7 +276,7 @@ then we're gonna have it inline-block for desktop
   padding-top: 65px;
   padding-bottom: 40px;
 }
-.orange_segments_section .orange_segments_title {
+.orange_internal_title {
   font-family: "bebas-neue";
   font-size: 20px;
   font-weight: 500;
@@ -392,7 +377,50 @@ then we're gonna have it inline-block for desktop
 .orange_mission_section p {
   color: #212020;
 }
-/* who_we_are page */
+/* who_we_are page ends */
+
+/* facilities_services page */
+.facilities_services_header_img {
+  position: absolute;
+  top: 35px;
+  bottom: -100px;
+  left: 20px;
+  right: 20px;
+  z-index: 10;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_header_img.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.owl-carousel {
+  margin-bottom: 50px;
+}
+.owl-pagination {
+  display: none;
+}
+.text_centered p {
+  text-align: center;
+}
+#our_facilities p {
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.one_stop_shop_bg {
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/one_stop_shop_bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  /*opacity: 0.8;*/
+}
+
+/* facilities_services page ends */
 
 @media (min-width: 980px) {
   .orange_btn {
@@ -539,9 +567,7 @@ then we're gonna have it inline-block for desktop
     max-height: none;
     height: auto;
     top: 10px;
-    bottom: -40px;
-    left: 30px;
-    right: 30px;
+    bottom: -70px;
   }
   .internal_page_title {
     letter-spacing: 18px;
@@ -553,7 +579,7 @@ then we're gonna have it inline-block for desktop
     display: block;
   }
   .internal_under_header_section {
-    padding-top: 135px;
+    padding-top: 180px;
   }
   .internal_under_header_section h3 {
     text-align: center;
@@ -667,4 +693,13 @@ then we're gonna have it inline-block for desktop
     max-width: 625px;
   }
   /* who_we_are page */
+
+  /* facilities_services page */
+  .facilities_services_header_img {
+    max-height: none;
+    height: auto;
+    top: 10px;
+    bottom: -70px;
+  }
+  /* facilities_services page ends */
 }
