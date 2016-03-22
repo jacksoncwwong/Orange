@@ -1,11 +1,14 @@
 /*Useful Info
 This area provides information that will help guide you
-through the CSS code. 
+through the CSS code. The code is written "mobile first"
+therefore the initial code is for mobile only, and if you
+refer to the Table of Contents, you'll find the tablet
+and desktop view's styling.
 
-Colors section provides info on
-colors that are repeated. These color names are searchable
-throughout this code, where this color is used the color
-name is tagged as a comment.
+Colors section provides info on colors that are repeated. 
+These color names are searchable throughout this code, 
+where this color is used the color name is tagged as a 
+comment.
 
 Table of Contents section helps users understand how the
 author separated the code, each area is also searchable
@@ -132,6 +135,29 @@ p {
   background-repeat: repeat;
   background-position: center;
   background-size: initial;
+}
+.home_section_slider .section_container_box {
+  position: relative;
+}
+.home_section_slider #home_banana {
+  max-width: 50%;
+  margin-left: 10%;
+}
+.home_section_slider .orange_wisdom {
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 400;
+  color: #9e7848;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: 10%;
+  margin-right: 10px;
+  text-align: left;
+}
+.home_section_slider .orange_wisdom span {
+  display: block;
+  font-weight: 700;
 }
 .has_orange_box .boxed_title_container {
   position: absolute;
@@ -270,8 +296,55 @@ p {
 /* facilities and services section ends */
 
 /* footer styling */
-.footer-content h5 {
+.footer-content {
+  margin-top: 85px;
+}
+.site-footer {
+  padding-bottom: 21px;
+}
+.site-footer .widget {
+  margin-bottom: 25px;
+}
+.footer-content .widget-title {
+  font-family: "bebas-neue";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  border: 2px solid white;
+  padding: 11px 10px;
   color: white;
+  display: inline-block;
+  text-transform: lowercase;
+  margin-bottom: 25px;
+}
+.footer-content .textwidget {
+  color: white;
+  font-size: 16px;
+}
+.site-footer .widget_gfxbucket_social {
+  margin-top: 0 !important;
+  margin-bottom: 70px;
+}
+.footer-content .social a {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+}
+.footer-content .social i {
+  color: white;
+  font-size: 18px;
+  padding: 8px;
+  background-color: #4c4b4c;
+  width: 34px;
+  height: 34px;
+  box-sizing: border-box;
+}
+.site-footer .copyright {
+  font-family: "bebas-neue";
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4c4c;
+  padding-top: 17px;
 }
 /* footer styling ends */
 
@@ -578,6 +651,10 @@ p {
   margin-top: 90px;
   margin-bottom: -30px;
 }
+#contact_form_row .clear_bg_color {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
 #contact_form_row .orange_internal_title { /*DRY opp*/
   font-family: "bebas-neue";
   font-size: 20px;
@@ -598,7 +675,14 @@ p {
   margin-bottom: 45px;
 }
 #contact_form_row textarea {
-  min-height: 30px;
+  min-height: 80px;
+}
+#contact_form_row .form_submit_container {
+  text-align: center;
+}
+#contact_form_row input[type="submit"] {
+  background-image: none;
+  padding: 12px 19px;
 }
 #contact_form_row input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: white;
@@ -636,6 +720,21 @@ p {
 }
 /* contact page ends */
 
+/* tablet styling */
+@media (min-width: 500px) {
+  .home_section_slider #home_banana {
+    max-width: 100%;
+    margin-left: auto;
+  }
+  .home_section_slider .orange_wisdom {
+    top: 50px;
+    left: 50%;
+    margin-left: 128.5px;
+  }
+}
+/* tablet styling ends */
+
+/* desktop stlying */
 @media (min-width: 980px) {
   .orange_btn {
     letter-spacing: 4px;
@@ -946,6 +1045,10 @@ p {
   /* screening_room page ends */
 
   /* contact page */
+  #contact_form_row .clear_bg_color {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
   .contact_bg {
     background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/contact_bg.png");
   }
@@ -959,5 +1062,21 @@ p {
   #contact_header #ol_2 {
     height: 100px;
   }
+  #contact_form_row {
+    max-width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contact_form_row .form_two_column {
+    display: flex;
+    justify-content: space-between;
+  }
+  #contact_form_row .form_two_column .wpcf7-form-control-wrap {
+    width: 45%;
+  }
+  #contact_form_row #form_name,
+  #contact_form_row #form_email {
+  }
 /* contact page ends */
 }
+/* desktop stlying ends */
