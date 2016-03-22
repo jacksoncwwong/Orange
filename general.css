@@ -90,15 +90,33 @@ Useful Info Ends*/
   text-align: center;
 }
 /*btn styling ends*/
+
+/*nav styling*/
+.nav-sticky .site-header .site-logo img { /*nav logo sizing*/
+  height: 60px;
+}
+.nav-sticky.nav-sticky-style-2 .site-header .nav-row,
+.nav-sticky .site-header .nav-row {
+  border-bottom: none;
+  background-color: transparent;
+}
+.nav-scroll-active .site-header .nav-toggle svg,
+.site-header .nav-toggle svg {
+  stroke: white;
+}
+.page-spacing-off.nav-sticky .site {
+  padding-top: 0;
+}
+.page-template-page-full .nav-row {
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/Light.png");
+}
+/*nav styling ends*/
 p {
   margin-bottom: 0;
   font-size: 14px;
 }
 .linebreak_desktop {
   display: none; /*linebreak for desktop view, hidden in mobile*/
-}
-.page-template-page-full .nav-row {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/Light.png");
 }
 .section_container_box {
   width: 100% !important;
