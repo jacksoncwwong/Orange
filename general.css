@@ -1,11 +1,36 @@
 /*Useful Info
+This area provides information that will help guide you
+through the CSS code. 
+
+Colors section provides info on
+colors that are repeated. These color names are searchable
+throughout this code, where this color is used the color
+name is tagged as a comment.
+
+Table of Contents section helps users understand how the
+author separated the code, each area is also searchable
+by name.
+
 Colors:
 button-color - #f15e27
+
+Table of Contents:
+
 
 Useful Info Ends*/
 
 /****** shared styling ******/
 /*btn styling*/
+.color_orange {
+  color: #f15e27; /*button-color*/
+}
+.orange_line {
+  height: 55px;
+  width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f15e27; /*button-color*/
+}
 .orange_btn { 
   display: inline-block;
   padding: 12px 53px 12px 19px;
@@ -20,6 +45,8 @@ Useful Info Ends*/
   color: white;
   border-radius: 20px;
   letter-spacing: 2px;
+  border: 0;
+  box-shadow: none;
 }
 .orange_btn:hover {
   background-color: white;
@@ -63,6 +90,9 @@ Useful Info Ends*/
 p {
   margin-bottom: 0;
   font-size: 14px;
+}
+.linebreak_desktop {
+  display: none; /*linebreak for desktop view, hidden in mobile*/
 }
 .page-template-page-full .nav-row {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/Light.png");
@@ -260,7 +290,7 @@ p {
   left: 20px;
   right: 20px;
   z-index: 10;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/who_we_are_header_img1.jpg");
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/who_we_are_header_img.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -484,9 +514,135 @@ p {
 }
 /* screening_room page ends */
 
+/* contact page */
+#contact_header {
+  position: relative;
+  z-index: 1;
+}
+#contact_form_row {
+  position: relative;
+  z-index: 0;
+}
+#contact_header .page_header {
+  position: relative;
+  height: auto;
+  padding-top: 60px;
+}
+.contact_bg {
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/contact_mobile_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  right: 30px;
+  z-index: 0;
+}
+#contact_header .section_title {
+  font-family: "bebas-neue";
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 1;
+}
+.contact_info_container {
+  text-align: center;
+  z-index: 1;
+}
+.contact_info_container .contact_info {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.contact_info .contact_method {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px
+}
+#contact_header .orange_line {
+  z-index: 1;
+}
+#contact_header #ol_1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#contact_header #ol_2 {
+  margin-top: 90px;
+  margin-bottom: -30px;
+}
+#contact_form_row .orange_internal_title { /*DRY opp*/
+  font-family: "bebas-neue";
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 4px;
+}
+#contact_form_row input[type="text"],
+#contact_form_row input[type="email"],
+#contact_form_row textarea {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 5px 1px 10px 1px;
+  margin-bottom: 45px;
+}
+#contact_form_row textarea {
+  min-height: 30px;
+}
+#contact_form_row input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+#contact_form_row input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+#contact_form_row input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+}
+#contact_form_row input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+#contact_form_row input:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: white;
+}
+#contact_form_row textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+}
+#contact_form_row textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: white;
+   opacity:  1;
+}
+#contact_form_row textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: white;
+   opacity:  1;
+}
+#contact_form_row textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: white;
+}
+#contact_form_row textarea:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+  color: white;
+}
+/* contact page ends */
+
 @media (min-width: 980px) {
   .orange_btn {
     letter-spacing: 4px;
+  }
+
+  .linebreak_mobile {
+    display: none; /*linebreak that only shows up in mobile, hidden for desktop*/
   }
   .section_container_box {
   }
@@ -788,4 +944,20 @@ p {
     right: 0;
   }
   /* screening_room page ends */
+
+  /* contact page */
+  .contact_bg {
+    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/contact_bg.png");
+  }
+  .contact_info_container {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #contact_header #ol_2 {
+    height: 100px;
+  }
+/* contact page ends */
 }
