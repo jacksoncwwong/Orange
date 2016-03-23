@@ -52,6 +52,7 @@ Useful Info Ends*/
   box-shadow: none;
 }
 .orange_btn:hover {
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_btn_hover_bg.png");
   background-color: white;
   background-image: ;
   color: #f15e27; /* button-color */
@@ -62,6 +63,7 @@ Useful Info Ends*/
   font-weight: 500;
   color: #f15e27; /* button-color */
   padding: 10px;
+  letter-spacing: 4px;
 }
 .no_bg_btn:hover {
   color: white;
@@ -76,7 +78,7 @@ Useful Info Ends*/
   padding-left: 27px;
 }
 .left_btn_arrow:hover {
-  background-image: url("");
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/left_white_arrow_np.png");
 }
 .right_btn_arrow {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/right_orange_arrow_np.png");
@@ -84,7 +86,7 @@ Useful Info Ends*/
   padding-right: 27px;
 }
 .right_btn_arrow:hover {
-  background-image: url("");
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/right_white_arrow_np.png");
 }
 .section_container_box .orange_btn_container { /*used to center the buttons on mobile*/
   text-align: center;
@@ -115,6 +117,9 @@ p {
   margin-bottom: 0;
   font-size: 14px;
 }
+.section_paragraph {
+  font-size: 16px;
+}
 .linebreak_desktop {
   display: none; /*linebreak for desktop view, hidden in mobile*/
 }
@@ -134,7 +139,7 @@ p {
   line-height: 24px;
   text-transform: uppercase !important;
   letter-spacing: 6px;
-  padding: 14px 0 14px 12px;
+  padding: 14px 6px 14px 12px;
   margin-bottom: 0 !important;
   border: 2px solid white;
 }
@@ -142,6 +147,25 @@ p {
   font-size: 45px !important;
   padding: 16px 0 16px 13px;
   letter-spacing: 12px;
+}
+.internal_under_header_section {
+  padding-top: 180px;
+  padding-bottom: 90px;
+}
+.page_header .orange_line,
+.internal_under_header_section .orange_line {
+  height: 65px;
+}
+.page_header .orange_line {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: -130px;
+}
+.internal_under_header_section .orange_line {
+  position: absolute;
+  left: 50%;
+  bottom: -120px;
 }
 /****** shared styling ends ******/
 
@@ -163,7 +187,7 @@ p {
 }
 .home_section_slider .orange_wisdom {
   font-family: "Lato";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   color: #9e7848;
   position: absolute;
@@ -304,7 +328,7 @@ p {
 }
 .facilities_and_services_section .section_paragraph {
   margin-top: 30px;
-  margin-left: calc(12.5% + 35px);
+  margin-left: calc(12.5% + 12px);
   width: 70%;
   max-width: 450px;
 }
@@ -315,10 +339,13 @@ p {
 
 /* footer styling */
 .footer-content {
-  margin-top: 85px;
+  margin-top: 0;
+  padding-top: 85px !important;
 }
 .site-footer {
   padding-bottom: 21px;
+  background-color: #212020;
+  border: none;
 }
 .site-footer .widget {
   margin-bottom: 25px;
@@ -366,6 +393,43 @@ p {
 }
 /* footer styling ends */
 
+/*map_footer section*/
+.home_section_slider .section-fs-container > section:last-child .fp-tableCell > .container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+.home_section_slider .section-fs-container > section:last-child .fp-tableCell .section-fs-content {
+  top: 0;
+}
+.home_section_slider .map_footer_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.map_footer_section .orange_map {
+  position: absolute;
+  top: 0;
+  bottom: 372px;
+  left: 0;
+  right: 0;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_map.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left -250px center;
+}
+.map_footer_section .site-footer {
+  height: 372px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/*map_footer section ends*/
+
 /* who_we_are page */
 .page_header {
   height: 50vh;
@@ -403,10 +467,6 @@ p {
   display: block;
   margin-bottom: -28px;
 }
-.internal_under_header_section {
-  padding-top: 180px;
-  padding-bottom: 90px;
-}
 .internal_section_container {
   padding-left: 20px;
   padding-right: 20px;
@@ -416,8 +476,12 @@ p {
   color: #212020;
   padding: 0;
 }
+.internal_under_header_section p {
+  text-align: left;
+}
 .internal_under_header_section h3 {
   font-size: 24px;
+  font-weight: 900;
 }
 .mobile_linebreaks {
   display: none;
@@ -429,6 +493,9 @@ p {
   padding-top: 65px;
   padding-bottom: 40px;
 }
+.orange_segments_section .so-widget-gfxbucket-visual-editor > div:last-child {
+  border-bottom: none;
+}
 .orange_internal_title {
   font-family: "bebas-neue";
   font-size: 20px;
@@ -436,8 +503,14 @@ p {
   letter-spacing: 5px;
   text-align: center;
 }
-.orange_segments_section .internal_section_container {
-
+.orange_segment_container {
+  text-align: center;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+  padding-bottom: 68px;
+  border-bottom: 1px solid #ad9053;
 }
 .orange_segment_container h4 {
   font-size: 31px;
@@ -453,10 +526,14 @@ p {
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 20px;
+  text-align: center;
 }
 .orange_segment_container p:last-child {
   margin-bottom: 0;
 }
+.branded_entertainment_section {
+    padding-bottom: 125px;
+  }
 .branded_entertainment_section .internal_section_container {
   position: relative;
 }
@@ -472,11 +549,12 @@ p {
   z-index: -1;
   /*opacity: 0.8;*/
 }
-.branded_entertainment_section .section_title {
-  font-size: 30px;
-  font-weight: 700;
+.branded_entertainment_section .section_title { /*DRY opp*/
+  font-size: 40px;
+  font-weight: 900;
   margin-top: 0;
   color: #212020;
+  letter-spacing: 4px;
 }
 .branded_entertainment_section .section_title .subtitle{
   display: block;
@@ -488,6 +566,7 @@ p {
 }
 .branded_entertainment_section p {
   color: #212020;
+  text-align: left;
 }
 .branded_entertainment_img {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/branded_entertainment_img.jpg");
@@ -496,9 +575,28 @@ p {
   width: 200px;
   height: 200px;
   margin-top: 54px;
+  margin-left: 45px;
+}
+.branded_entertainment_section .brown_box {
+  position: absolute;
+  left: 20px;
+  bottom: -25px;
+  width: 165px;
+  height: 165px;
+  background-color: rgba(173, 144, 83, 0.5);
+  z-index: -1;
+}
+.orange_mission_section {
+  padding-top: 75px;
 }
 .orange_mission_section .internal_section_container {
   position: relative;
+}
+.orange_mission_section .orange_line {
+  height: 90px;
+  position: absolute;
+  left: 50%;
+  top: -120px;
 }
 .orange_mission_bg {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_mission_bg.png");
@@ -513,11 +611,12 @@ p {
   z-index: -1;
   /*opacity: 0.8;*/
 }
-.orange_mission_section .section_title {
+.orange_mission_section .section_title { /*DRY opp*/
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
   margin-top: 0;
   color: #212020;
+  letter-spacing: 4px;
 }
 .orange_mission_section .section_title .subtitle{
   display: block;
@@ -529,6 +628,7 @@ p {
 }
 .orange_mission_section p {
   color: #212020;
+  text-align: left;
 }
 /* who_we_are page ends */
 
@@ -577,6 +677,9 @@ p {
 /* screening_room page */
 .orange_vid_container {
   padding-top: 60px;
+}
+.orange_vid_container .video-wrapper {
+  border: none;
 }
 .sizzle_me_bg {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/sizzle_me_mobile_bg.png");
@@ -679,6 +782,7 @@ p {
   font-weight: 500;
   color: white;
   letter-spacing: 4px;
+  margin-bottom: 50px;
 }
 #contact_form_row input[type="text"],
 #contact_form_row input[type="email"],
@@ -691,6 +795,7 @@ p {
   box-sizing: border-box;
   padding: 5px 1px 10px 1px;
   margin-bottom: 45px;
+  color: white;
 }
 #contact_form_row textarea {
   min-height: 80px;
@@ -749,6 +854,9 @@ p {
     left: 50%;
     margin-left: 128.5px;
   }
+  .map_footer_section .orange_map {
+    background-position: center;
+  }
 }
 /* tablet styling ends */
 
@@ -757,11 +865,23 @@ p {
   .orange_btn {
     letter-spacing: 4px;
   }
-
   .linebreak_mobile {
     display: none; /*linebreak that only shows up in mobile, hidden for desktop*/
   }
-  .section_container_box {
+  .page_header .orange_line,
+  .internal_under_header_section .orange_line {
+    height: 100px;
+  }
+  .page_header .orange_line {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    bottom: -120px;
+  }
+  .internal_under_header_section .orange_line {
+    position: absolute;
+    left: 50%;
+    bottom: -140px;
   }
   .has_orange_box {
     padding-top: 40vh;
@@ -788,7 +908,7 @@ p {
     line-height: 54px;
   }
   .has_orange_box .section_paragraph {
-    margin-left: calc( ((100% - 780px)/2) + 63px );
+    margin-left: calc( ((100% - 780px)/2) + 65px );
     margin-top: 25px;
     position: relative;
     left: 0;
@@ -825,11 +945,11 @@ p {
   }
   .who_we_are_section .section_paragraph {
     margin-top: 35px;
-    margin-left: calc( ((100% - 780px)/2) + 63px );
+    margin-left: calc( ((100% - 780px)/2) + 65px );
   }
   .who_we_are_section .orange_btn {
     margin-top: 30px;
-    margin-left: calc( ((100% - 780px)/2) + 63px );
+    margin-left: calc( ((100% - 780px)/2) + 65px );
   }
   .who_we_are_section .orange_btn_container {
     text-align: left;
@@ -840,15 +960,13 @@ p {
   .our_work_section .boxed_title_container {
     position: relative;
     height: 92px;
+    margin-left: 35%;
   }
   .our_work_section .boxed_title {
-    position: absolute;
-    right: calc( 15% + 100px );
   }
   .our_work_section .section_paragraph {
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: 15%;
+    margin-left: calc( 35% + 17px);
     width: 410px;
   }
   .our_work_section .orange_btn_container {
@@ -856,10 +974,8 @@ p {
     height: 104px;
   }
   .our_work_section .orange_btn {
-    background-position: right 25px center;
-    padding-right: 75px;
     position: absolute;
-    right: 16.5%;
+    left: calc( 50% + 30px);
     top: 50%;
     margin-top: -19px;
   }
@@ -871,7 +987,6 @@ p {
 
   /* who we are section */
   .facilities_and_services_section {
-
   }
   .facilities_and_services_bg {
     background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_bg.png");
@@ -883,16 +998,21 @@ p {
   }
   .facilities_and_services_section .section_paragraph {
     margin-top: 35px;
-    margin-left: calc( ((100% - 780px)/2) + 63px );
+    margin-left: calc( ((100% - 780px)/2) + 65px );
   }
   .facilities_and_services_section .orange_btn {
     margin-top: 30px;
-    margin-left: calc( ((100% - 780px)/2) + 63px );
+    margin-left: 50%;
   }
   .facilities_and_services_section .orange_btn_container {
     text-align: left;
   }
   /* who we are section ends */
+
+  /* map_footer section */
+  .map_footer_section .orange_map {
+  }
+  /* map_footer section ends */
 
   /* who_we_are page */
   .page_header {
@@ -960,6 +1080,13 @@ p {
   #orange_segment_5 {
     padding-top: 15px;
   }
+  .orange_segment_container {
+    text-align: left;
+    border-bottom: none;
+  }
+  .orange_segment_container p {
+    text-align: left;
+  }
   .orange_segment_container .line_box {
     position: absolute;
     border-right: 1px solid rgba(173, 144, 83, 1);
@@ -986,6 +1113,9 @@ p {
     left: 0;
     bottom: 0;
   }
+  .branded_entertainment_section {
+    padding-bottom: 230px;
+  }
   .branded_entertainment_section .internal_section_container {
     padding-top: 60px;
     padding-left: 55px;
@@ -1011,18 +1141,21 @@ p {
     right: 0;
     top: 107px;
     margin-top: 0;
+    margin-left: 0;
   }
   .branded_entertainment_section .brown_box {
-    position: absolute;
+    left: initial;
+    bottom: initial;
     right: 90px;
     top: 197px;
     width: 260px;
     height: 260px;
-    background-color: rgba(173, 144, 83, 0.5);
-    z-index: -1;
   }
   .orange_mission_section {
 
+  }
+  .orange_mission_section .orange_line {
+    top: -120px;
   }
   .orange_mission_section p {
     max-width: 625px;
@@ -1053,6 +1186,7 @@ p {
   #sizzle_section .btn_container .no_bg_btn {
     position: absolute;
     top: 0;
+    font-size: 18px;
   }
   #sizzle_section .btn_container .left_btn_arrow {
     left: 0;
