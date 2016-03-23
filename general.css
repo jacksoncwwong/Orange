@@ -204,6 +204,18 @@ p {
   font-weight: 700;
   font-style: normal;
 }
+.has_orange_box #ol_1 {
+  height: 70px;
+  position: absolute;
+  top: -35px;
+  left: 50%;
+}
+.has_orange_box #ol_2 {
+  position: absolute;
+  height: 75px;
+  left: 50%;
+  bottom: -37.5px;
+}
 .has_orange_box .boxed_title_container {
   position: absolute;
   left: 50%;
@@ -234,7 +246,7 @@ p {
   width: 50%;
   height: 25vh;
   z-index: -2;
-  background-color: rgba(212,175,99, 0.6);
+  background-color: #d2ac61;
 }
 
 /* who we are section */
@@ -853,6 +865,11 @@ p {
   color: white;
 }
 /* contact page ends */
+@media (min-width: 345px) {
+  .has_orange_box .section_paragraph {
+    bottom: 60px;
+  }
+}
 
 /* tablet styling */
 @media (min-width: 500px) {
@@ -878,6 +895,10 @@ p {
 
 /* desktop stlying */
 @media (min-width: 980px) {
+  .has_orange_box #ol_2 {
+    height: 130px;
+    bottom: 7vh;
+  }
   .linebreak_desktop {
     display: block;
   }
@@ -948,7 +969,7 @@ p {
     right: calc( ((100% - 780px)/2) - 50px );
     left: 50%;
     top: 45vh;
-    bottom: 50px;
+    bottom: 10vh;
   }
   .word_bg {
     left: 15%;
