@@ -227,10 +227,13 @@ p {
 .home_section_slider .orange_down_arrow,
 .orange_segments_section .orange_down_arrow,
 #our_facilities .orange_down_arrow {
-  top: -25px;
   left: 50%;
   margin-left: -8.5px;
   z-index: 10;
+}
+.home_section_slider .orange_down_arrow {
+  top: -45px;
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_down_arrow.png");
 }
 .orange_segments_section .orange_down_arrow {
   top: -160px;
