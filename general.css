@@ -94,6 +94,15 @@ Useful Info Ends*/
 /*btn styling ends*/
 
 /*nav styling*/
+.site-header .nav-toggle {
+  padding-top: 0;
+  margin-top: 0px;
+}
+.site-header .nav-toggle::before {
+  content: "MENU";
+  font-size: 10px;
+  color: white;
+}
 .nav-sticky .site-header .site-logo img { /*nav logo sizing*/
   height: 45px;
 }
@@ -105,6 +114,7 @@ Useful Info Ends*/
 .nav-scroll-active .site-header .nav-toggle svg,
 .site-header .nav-toggle svg {
   stroke: white;
+  margin-top: -12px;
 }
 .page-spacing-off.nav-sticky .site {
   padding-top: 0;
@@ -117,6 +127,13 @@ p {
   margin-bottom: 0;
   font-size: 14px;
   font-weight: 400;
+}
+.orange_down_arrow {
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_long_down_arrow.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 17px;
+  height: 66px;
 }
 .section_paragraph {
   font-size: 16px;
@@ -189,27 +206,44 @@ p {
 .home_section_slider .orange_wisdom {
   font-family: "Lato";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 700;
   color: #9e7848;
+  text-align: left;
+  font-style: normal;
   position: absolute;
   top: 50px;
   left: 50%;
   margin-left: 10%;
   margin-right: 10px;
-  text-align: left;
-  font-style: italic;
 }
 .home_section_slider .orange_wisdom span {
   display: block;
-  font-weight: 700;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
 }
-.has_orange_box #ol_1 {
+#orange_wisdom_quotes {
+  display: none !important;
+}
+.home_section_slider .orange_down_arrow,
+.orange_segments_section .orange_down_arrow,
+#our_facilities .orange_down_arrow {
+  top: -25px;
+  left: 50%;
+  margin-left: -8.5px;
+  z-index: 10;
+}
+.orange_segments_section .orange_down_arrow {
+  top: -160px;
+}
+#our_facilities .orange_down_arrow {
+  top: -140px;
+}
+/*.has_orange_box #ol_1 { this is for the orange line from original design 
   height: 70px;
   position: absolute;
   top: -35px;
   left: 50%;
-}
+}*/
 .has_orange_box #ol_2 {
   position: absolute;
   height: 75px;
@@ -371,7 +405,7 @@ p {
   font-weight: 400;
   letter-spacing: 5px;
   border: 2px solid white;
-  padding: 11px 10px;
+  padding: 11px 5px 11px 10px;
   color: white;
   display: inline-block;
   text-transform: lowercase;
@@ -460,7 +494,7 @@ p {
   left: 20px;
   right: 20px;
   z-index: 10;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/who_we_are_header_img.jpg");
+  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/who_we_are_header_img1.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -662,11 +696,8 @@ p {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-.owl-carousel {
-  margin-bottom: 50px;
-}
-.owl-pagination {
-  display: none;
+.wonder_carousel_plugin_container {
+  margin-bottom: 37px;
 }
 .text_centered p {
   text-align: center;
@@ -698,6 +729,9 @@ p {
 }
 .orange_vid_container .video-wrapper {
   border: none;
+}
+.orange_vid_container .video-wrapper iframe {
+  height: 106%;
 }
 .sizzle_me_bg {
   background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/sizzle_me_mobile_bg.png");
@@ -881,8 +915,7 @@ p {
     margin-left: auto;
   }
   .home_section_slider .orange_wisdom {
-    top: 50px;
-    left: 50%;
+    /*top: 50px;*/
     margin-left: 128.5px;
   }
   .map_footer_section .orange_map {
@@ -1270,5 +1303,11 @@ p {
   #contact_form_row #form_email {
   }
 /* contact page ends */
+  .orange_segments_section .orange_down_arrow {
+    top: -195px;
+  }
+  #our_facilities .orange_down_arrow {
+    top: -210px;
+  }
 }
 /* desktop stlying ends */
