@@ -29,27 +29,39 @@ jQuery(document).ready(function( $ ) {
     var randomCount = Math.floor(Math.random() * quotesNum);
     $(".orange_wisdom span").html(quotes[randomCount].textContent);
     
-    //code for all animations on page
-    if($(window).width() > 980){
-        // $(".home_section_slider .section-fs-content #home_banana").fadeIn( "slow", function() {
-        //   $(".home_section_slider .section-fs-content").animate({ left: '52%' }, 1000, 'linear');
-        // });
+    //code for all animations on home page
+    if($(window).width() > 980){      
+        var $animation_elements = $('.animation_element');
+        var $window = $(window);
+        console.log($animation_elements);
 
-        //so it seems I can either use .css to set certain css peramiters first, then I'll .animate them after
-        
-        // $(window).on('scroll', function() {
-        //     var y_scroll_pos = window.pageYOffset;
-        //     var lines_animation = 700;
-        //     var animateSpeed = 1500;
-        
-            // if(y_scroll_pos > lines_animation) {
-            //     $("#orange_segment_1 .line_box").animate({ bottom: '83px' }, animateSpeed, 'linear');
-            //     $("#orange_segment_2 .line_box").animate({ top: '80px' }, animateSpeed, 'linear');
-            //     $("#orange_segment_3 .line_box").animate({ bottom: '83px' }, animateSpeed, 'linear');
-            //     $("#orange_segment_4 .line_box").animate({ top: '80px' }, animateSpeed, 'linear');
-            //     $(".orange_segment_container .line_box").animate({ height: 'auto' }, animateSpeed, 'linear');
-            // }
-        // });
+        function check_if_in_view() {
+          var window_height = $window.height();
+          var window_top_position = $window.scrollTop();
+          var window_bottom_position = (window_top_position + window_height);
+          console.log("window_top: " + window_top_position);
+          console.log("window_bottom: " + window_bottom_position);
+         
+          $.each($animation_elements, function() {
+            var $element = $(this);
+            var element_height = $element.outerHeight();
+            var element_top_position = $element.offset().top;
+            var element_bottom_position = (element_top_position + element_height);
+         
+            //check to see if this current container is within viewport
+            if ((element_bottom_position >= window_top_position) &&
+                (element_top_position <= window_bottom_position)) {
+              $element.addClass('in_view');
+              console.log(element_top_position);
+            } else {
+              $element.removeClass('in_view');
+            }
+          });
+        }
+
+        $window.on('resize', check_if_in_view);
+        $window.on('scroll', check_if_in_view);
+        $window.trigger('scroll');
     }
 });
 
