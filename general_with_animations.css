@@ -230,6 +230,7 @@ p {
   left: 50%;
   margin-left: 10%;
   margin-right: 10px;
+  max-width: 445px;
 }
 .home_section_slider .orange_wisdom span {
   display: block;
@@ -1190,20 +1191,24 @@ p {
   #orange_segment_1 .line_box {
     top: 0;
     left: 0;
-    bottom: 83px;
+    bottom: 317px;
+    /*bottom: 83px;*/
   }
   #orange_segment_2 .line_box {
-    top: 80px;
+    /*top: 80px;*/
+    top: 317px;
     left: 0;
     bottom: 0;
   }
   #orange_segment_3 .line_box {
     top: 0;
     left: 0;
-    bottom: 83px;
+    bottom: 317px;
+    /*bottom: 83px;*/
   }
   #orange_segment_4 .line_box {
-    top: 80px;
+    /*top: 80px;*/
+    top: 317px;
     left: 0;
     bottom: 0;
   }
@@ -1329,6 +1334,18 @@ p {
   }
   #our_facilities .orange_down_arrow {
     top: -210px;
+  }
+  /*home banana animation*/
+  .home_section_slider .orange_wisdom {
+    animation-duration: 2s;
+    animation-name: quote_slidein;
+  }
+  @keyframes quote_slidein {
+    0% { left: 48%; opacity: 0; }
+    100% { left: 50%; opacity: 1; }
+  }
+  .has_orange_box #ol_2 {
+
   }
 }
 /****** desktop stlying ends ******/
