@@ -563,6 +563,7 @@ p {
 .orange_segments_section {
   padding-top: 65px;
   padding-bottom: 40px;
+  display: none; /*this is a section that was originally created but they then wanted to hide it, it show cases their team*/
 }
 .orange_segments_section .so-widget-gfxbucket-visual-editor > div:last-child {
   border-bottom: none;
@@ -676,12 +677,12 @@ p {
   background-size: contain;
   background-position: top right;
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 0;
+  width: 93%;
+  right: 15px;
+  top: 120px;
   bottom: 0;
   z-index: -1;
-  /*opacity: 0.8;*/
+  opacity: 0;
 }
 .orange_mission_section .section_title { /*DRY opp*/
   font-size: 30px;
@@ -737,12 +738,12 @@ p {
   background-size: contain;
   background-position: top right;
   position: absolute;
-  left: 30px;
-  right: 30px;
-  top: 0;
+  width: 93%;
+  right: 15px;
+  top: 100px;
   bottom: 0;
   z-index: -1;
-  /*opacity: 0.8;*/
+  opacity: 0;
 }
 /****** facilities_services page ******/
 
@@ -802,7 +803,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 30px;
   right: 30px;
@@ -971,7 +972,7 @@ p {
     position: absolute;
     z-index: 10;
     left: 50%;
-    bottom: -120px;
+    top: 465px;
   }
   .internal_under_header_section .orange_line {
     position: absolute;
@@ -1221,8 +1222,9 @@ p {
   }
   .branded_entertainment_section .branded_entertainment_bg {
     background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/branded_entertainment_bg.png");
-    left: 0;
-    right: 330px;
+    left: -1%;
+    width: 66%;
+    opacity: 0;
   }
   .branded_entertainment_section .section_title .subtitle {
     margin-bottom: 10px;
@@ -1250,11 +1252,8 @@ p {
     width: 260px;
     height: 260px;
   }
-  .orange_mission_section {
-
-  }
   .orange_mission_section .orange_line {
-    top: -120px;
+    top: -65px;
   }
   .orange_mission_section p {
     max-width: 625px;
@@ -1267,6 +1266,10 @@ p {
     height: auto;
     top: 10px;
     bottom: -70px;
+  }
+  .one_stop_shop_section {
+    padding-top: 20px;
+    padding-bottom: 150px;
   }
   /* facilities_services page ends */
 
@@ -1346,9 +1349,9 @@ p {
   }
   .home_section_slider .fp-section.active .has_orange_box #ol_2 {
     animation-duration: 1.8s;
-    animation-name: orange_line_drop;
+    animation-name: home_orange_line_drop;
   }
-  @keyframes orange_line_drop {
+  @keyframes home_orange_line_drop {
     0% { height: 0px; }
     20% { height: 0px; }
     100% { height: 130px; }
@@ -1372,6 +1375,15 @@ p {
     0% { opacity: 0; right: 14%;}
     20% { opacity: 0; right: 14%;}
     100% { opacity: 0.6; right: 15%;}
+  }
+  .page_header .orange_line {
+    animation-duration:1.8s;
+    animation-name: internal_orange_line_drop;
+  }
+  @keyframes internal_orange_line_drop {
+    0% { height: 0px; }
+    20% { height: 0px; }
+    100% { height: 100px; }
   }
 }
 /****** desktop stlying ends ******/
