@@ -20,19 +20,19 @@ jQuery(document).ready(function( $ ) {
     if($(window).width() > 980){
         $(window).on('scroll', function() {
             var y_scroll_pos = window.pageYOffset;
-            var lines_animation = 700;
-            var branded_animation = 1100;
-            var mission_animation = 1800;
-            var lineSpeed = 1500;
+            // var lines_animation = 700;
+            var branded_animation = 700;
+            var mission_animation = 1100;
+            // var lineSpeed = 1500;
             var bgSpeed = 2000;
         
-            if(y_scroll_pos > lines_animation) {
-                $("#orange_segment_1 .line_box").animate({ bottom: '83px' }, lineSpeed, 'linear');
-                $("#orange_segment_2 .line_box").animate({ top: '80px' }, lineSpeed, 'linear');
-                $("#orange_segment_3 .line_box").animate({ bottom: '83px' }, lineSpeed, 'linear');
-                $("#orange_segment_4 .line_box").animate({ top: '80px' }, lineSpeed, 'linear');
-                $(".orange_segment_container .line_box").animate({ height: 'auto' }, lineSpeed, 'linear');
-            }
+            // if(y_scroll_pos > lines_animation) {
+            //     $("#orange_segment_1 .line_box").animate({ bottom: '83px' }, lineSpeed, 'linear');
+            //     $("#orange_segment_2 .line_box").animate({ top: '80px' }, lineSpeed, 'linear');
+            //     $("#orange_segment_3 .line_box").animate({ bottom: '83px' }, lineSpeed, 'linear');
+            //     $("#orange_segment_4 .line_box").animate({ top: '80px' }, lineSpeed, 'linear');
+            //     $(".orange_segment_container .line_box").animate({ height: 'auto' }, lineSpeed, 'linear');
+            // }
             if(y_scroll_pos > branded_animation) {
                 $(".branded_entertainment_section .branded_entertainment_bg").animate({ left: '0%', opacity: '1' }, bgSpeed, 'linear');
             }

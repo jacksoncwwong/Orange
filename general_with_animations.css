@@ -54,7 +54,7 @@ Useful Info Ends*/
   display: inline-block;
   padding: 12px 53px 12px 19px;
   background-color: #f15e27; /*primary-hit-color*/
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_btn_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/orange_btn_bg.png");
   background-position: right center;
   background-repeat: no-repeat;
   font-family: "bebas-neue";
@@ -68,7 +68,7 @@ Useful Info Ends*/
   box-shadow: none;
 }
 .orange_btn:hover {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_btn_hover_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/orange_btn_hover_bg.png");
   background-color: white;
   color: #f15e27; /*primary-hit-color*/
 }
@@ -88,20 +88,20 @@ Useful Info Ends*/
   background-repeat: no-repeat;
 }
 .left_btn_arrow {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/left_orange_arrow_np.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/left_orange_arrow_np.png");
   background-position: left center;
   padding-left: 27px;
 }
 .left_btn_arrow:hover {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/left_white_arrow_np.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/left_white_arrow_np.png");
 }
 .right_btn_arrow {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/right_orange_arrow_np.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/right_orange_arrow_np.png");
   background-position: right center;
   padding-right: 27px;
 }
 .right_btn_arrow:hover {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/right_white_arrow_np.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/right_white_arrow_np.png");
 }
 .section_container_box .orange_btn_container { /*used to center the buttons on mobile*/
   text-align: center;
@@ -135,7 +135,7 @@ Useful Info Ends*/
   padding-top: 0;
 }
 .page-template-page-full .nav-row {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/Light.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/Light.png");
 }
 /*nav styling ends*/
 p {
@@ -144,7 +144,7 @@ p {
   font-weight: 400;
 }
 .orange_down_arrow {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_long_down_arrow.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/orange_long_down_arrow.png");
   background-repeat: no-repeat;
   position: absolute;
   width: 17px;
@@ -250,7 +250,7 @@ p {
 }
 .home_section_slider .orange_down_arrow {
   top: -45px;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_down_arrow.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/orange_down_arrow.png");
 }
 .orange_segments_section .orange_down_arrow {
   top: -160px;
@@ -291,7 +291,7 @@ p {
   left: 30px;
   right: 30px;
   z-index: -1;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_home_bg.jpg");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/orange_home_bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -315,7 +315,7 @@ p {
   right: 30px;
   top: 0;
   bottom: 0;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/partners_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/partners_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -346,7 +346,7 @@ p {
   right: 30px;
   top: 0;
   bottom: 0;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/our_work_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/our_work_bg.png");
   background-repeat: no-repeat;
   background-position: center 20vh;
   background-size: contain;
@@ -380,7 +380,7 @@ p {
   right: 30px;
   top: 0;
   bottom: 0;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_mobile_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/facilities_services_mobile_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -486,7 +486,7 @@ p {
   bottom: 372px;
   left: 0;
   right: 0;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/MapMobile.gif");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/MapMobile.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,7 +516,7 @@ p {
   left: 20px;
   right: 20px;
   z-index: 10;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/who_we_are_header_img1.jpg");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/who_we_are_header_img1.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -611,7 +611,7 @@ p {
   position: relative;
 }
 .branded_entertainment_bg {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/branded_entertainment_mobile_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/04/branded_entertainment_bg_orange_mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -642,7 +642,7 @@ p {
   text-align: left;
 }
 .branded_entertainment_img {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/branded_entertainment_img.jpg");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/branded_entertainment_img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 200px;
@@ -672,7 +672,7 @@ p {
   top: -120px;
 }
 .orange_mission_bg {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/orange_mission_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/04/orange_mission_grey.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
@@ -716,7 +716,7 @@ p {
   left: 20px;
   right: 20px;
   z-index: 10;
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_header_img.jpg");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/facilities_services_header_img.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
 }
@@ -733,7 +733,7 @@ p {
   margin-right: auto;
 }
 .one_stop_shop_bg {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/one_stop_shop_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/one_stop_shop_bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
@@ -758,7 +758,7 @@ p {
   height: 106%;
 }
 .sizzle_me_bg {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/sizzle_me_mobile_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/sizzle_me_mobile_bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top right;
@@ -799,7 +799,7 @@ p {
   padding-top: 60px;
 }
 .contact_bg {
-  background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/contact_mobile_bg.png");
+  background-image: url("http://orange567.com/wp-content/uploads/2016/03/contact_mobile_bg.png");
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -943,7 +943,7 @@ p {
     margin-left: 128.5px;
   }
   .map_footer_section .orange_map {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/Map.gif");
+    background-image: url("http://orange567.com/wp-content/uploads/2016/03/Map.gif");
     background-position: center;
   }
 }
@@ -1085,7 +1085,7 @@ p {
   .facilities_and_services_section {
   }
   .facilities_and_services_bg {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/facilities_services_bg.png");
+    background-image: url("http://orange567.com/wp-content/uploads/2016/03/facilities_services_bg.png");
     background-position: center;
   }
   .facilities_and_services_section .boxed_title_container {
@@ -1221,7 +1221,7 @@ p {
     padding-left: 55px;
   }
   .branded_entertainment_section .branded_entertainment_bg {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/branded_entertainment_bg.png");
+    background-image: url("http://orange567.com/wp-content/uploads/2016/04/branded_entertainment_bg_orange.png");
     left: -1%;
     width: 66%;
     opacity: 0;
@@ -1233,7 +1233,7 @@ p {
     max-width: 490px;
   }
   .branded_entertainment_img {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/branded_entertainment_img.jpg");
+    background-image: url("http://orange567.com/wp-content/uploads/2016/03/branded_entertainment_img.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 314px;
@@ -1275,7 +1275,7 @@ p {
 
   /* screening_room page */
   .sizzle_me_bg {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/sizzle_me_bg.png");
+    background-image: url("http://orange567.com/wp-content/uploads/2016/03/sizzle_me_bg.png");
     left: 0;
     right: 0;
   }
@@ -1304,7 +1304,7 @@ p {
     padding-bottom: 100px;
   }
   .contact_bg {
-    background-image: url("http://jacksonwong.ca/orange/wp-content/uploads/2016/03/contact_bg.png");
+    background-image: url("http://orange567.com/wp-content/uploads/2016/03/contact_bg.png");
   }
   .contact_info_container {
     width: 700px;
